@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+	<ModInfo>
+		<Name value="VehicleSpeedTweak" />
+		<DisplayName value="Vehicle Speed Tweak"/>
+		<Description value="Changes the in-game vehicle speeds and torque" />
+		<Author value="Nathan Williams" />
+		<Version value="1.0.1" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>

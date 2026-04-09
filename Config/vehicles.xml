@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- motorTorque_turbo, velocityMax_turbo appear to be (x,y,z,w) where x is forward, y is backward, z is forward turbo, w is backward turbo -->
+ 
+<!-- hopForce appears to be (x,y) where x is jump force and y is rotation -->
+<configs>
+    <!-- *** BICYCLE -->
+    <set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='velocityMax_turbo']/@value">11, 4, 15, 5</set>
+    <set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='motorTorque_turbo']/@value">1000, 250, 1500, 400</set>
+    <set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='hopForce']/@value">8, 1</set>
+    <!-- default values are: 
+    velocityMax_turbo = "6, 4, 8.5, 4",
+    motorTorque_turbo = "500, 180, 750, 180", 
+    hopForce = "4, .05" 
+    -->
+
+    <!-- *** MINIBIKE -->
+    <set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@name='velocityMax_turbo']/@value">16, 8, 22, 12</set>
+    <set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@name='motorTorque_turbo']/@value">1200, 400, 1800, 550</set>
+    <set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@name='hopForce']/@value">3, 0.1</set>
+    <!-- default values are: 
+    velocityMax_turbo = "7, 4, 9.2, 4",
+    motorTorque_turbo = "400, 200, 560, 200", 
+    hopForce = "1.5, .2" 
+    -->
+
+    <!-- *** MOTORCYCLE -->
+    <set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax_turbo']/@value">27, 15, 32, 20</set>
+    <set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='motorTorque_turbo']/@value">2800, 600, 3000, 800</set>
+    <!-- default values are: 
+    velocityMax_turbo = "9.8, 6, 14, 8",
+    motorTorque_turbo = "1400, 500, 2100, 650",
+    -->
+
+    <!-- *** 4x4 Truck -->
+    <set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='velocityMax_turbo']/@value">50, 25, 75, 30</set>
+    <set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='motorTorque_turbo']/@value">4000, 1800, 5000, 2000</set>
+    <!-- default values are:
+    velocityMax_turbo = "10, 8, 14, 10",
+    motorTorque_turbo = "3500, 1500, 4500, 2000",
+    -->
+</configs>
