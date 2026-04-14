@@ -2,17 +2,34 @@
 
 <!-- motorTorque_turbo, velocityMax_turbo appear to be (x,y,z,w) where x is forward, y is backward, z is forward turbo, w is backward turbo -->
  
-<!-- hopForce appears to be (x,y) where x is jump force and y is rotation -->
+<!-- hopForce appears to be (x,y) where x is jump force and y is distance from centre of mass where the force is applied -->
 <configs>
     <!-- *** BICYCLE -->
-    <set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='velocityMax_turbo']/@value">11, 4, 15, 5</set>
+    <set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='velocityMax_turbo']/@value">16, 4, 15, 5</set>
     <set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='motorTorque_turbo']/@value">1000, 250, 1500, 400</set>
-    <set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='hopForce']/@value">8, 1</set>
+    <set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='hopForce']/@value">6, 0.06</set>
     <!-- default values are: 
     velocityMax_turbo = "6, 4, 8.5, 4",
     motorTorque_turbo = "500, 180, 750, 180", 
     hopForce = "4, .05" 
     -->
+<!--
+	<set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@class='handlebars']/property[@name='IKHandRPosition']/@value">1, 1, 0.5</set>
+	<set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@class='handlebars']/property[@name='IKHandLPosition']/@value">-1, 1, -0.5</set>
+	<set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@class='pedals']/property[@name='IKFootLPosition']/@value">0.5, 0, 0.1</set>
+	<set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@class='pedals']/property[@name='IKFootRPosition']/@value">-0.5, 0, 0.1</set>
+	<set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@class='seat0']/property[@name='position']/@value">0, -0.2, -0.5</set>
+-->
+	<set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='cameraDistance']/@value">3,9</set>
+
+	<set xpath="/vehicles/vehicle/property[@name='upForce']/@value">15</set> <!--needs diff for gyro -->
+	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='upForce']/@value">.5</set>
+	
+	<set xpath="/vehicles/vehicle/property[@name='upAngleMax']/@value">720</set> <!--diff for gyro and blimp -->
+	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='upAngleMax']/@value">60</set>
+
+	<set xpath="/vehicles/vehicle/property[@name='steerCenteringRate']/@value">1000</set>
+
 
     <!-- *** MINIBIKE -->
     <set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@name='velocityMax_turbo']/@value">16, 8, 22, 12</set>

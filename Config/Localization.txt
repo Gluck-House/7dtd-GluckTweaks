@@ -1,0 +1,10 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+loadingTipGluck,UI,Loading Screen,x,,local localisation and playlist lord is the son of cake lord,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+loadingTipGluck_title,UI,Loading Screen,x,,Gluck gang,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+loadingTipGluck2,UI,Loading Screen,x,,Seeing this tip means that Gluck Tweaks (7dtd-GluckTweaks) has successfully been loaded - this mod increases the speed of all vehicles.,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+loadingTipGluck2_title,UI,Loading Screen,x,,Gluck Tweaks,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+
+
